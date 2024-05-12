@@ -3,9 +3,11 @@ description: "A collection of articles for my D&D worldbuilding"
 date: 2023-01-01
 ---
 # Welcome to Valeria!
-In the land of Valeria, the forces of magic and technology collide in a battle for supremacy. Divided into two regions, the west and east, Valeria is a land of great contrast and diversity, where vast countryside and bustling cities exist side by side. The five major cities of Maleketh, Felgrand, Timmaeus, Boljaw, and Yarlford each have their own unique character and challenges, from the corrupt criminal organizations of Felgrand to the powerful High Families of Maleketh.
+Since 2021, I have been running "The Valerian Chronicles," my own homebrew Dungeons & Dragons world that continues to evolve with every session. This expansive world, crafted with careful detail and boundless creativity, serves as the stage for various groups of adventurers, each bringing their own unique flair to the evolving narrative. As players explore the intricate landscapes, confront complex characters, and unravel the rich lore of Valeria, they contribute to the living story that grows with each decision and dice roll. This ongoing campaign not only adapts to the dynamic progression of its players but also reflects my own evolving skills and ideas as a Dungeon Master. Please feel free to use my homebrew world as you wish, and I hope it could serve as inspiration for your writing as well!
 
 <img class="thumbnailshadow" src="img/valeria map.png" alt="A map of the fictional country of Valeria">
+
+In the land of Valeria, the forces of magic and technology collide in a battle for supremacy. Divided into two regions, the west and east, Valeria is a land of great contrast and diversity, where vast countryside and bustling cities exist side by side. The five major cities of Maleketh, Felgrand, Timmaeus, Boljaw, and Yarlford each have their own unique character and challenges, from the corrupt criminal organizations of Felgrand to the powerful High Families of Maleketh.
 
 **Maleketh, the merchant capital of Valeria,** is where the wealthy and influential High Families reside. The Barlowe family controls the transportation industry, the Megadome family built the city's infrastructure, the Evermont family controls the distribution of wine and alcohol, and the Saka family owns the food and hotel industry. But despite their power and influence, Maleketh is not without its dangers. The High Families are constantly vying for control and dominance, and there are many who would like to see them fall.
 
