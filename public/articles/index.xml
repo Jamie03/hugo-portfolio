@@ -2,70 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on JM Santiago III</title>
-    <link>//localhost:1313/articles/</link>
+    <link>http://localhost:1313/hugo-portfolio/articles/</link>
     <description>Recent content in Articles on JM Santiago III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2024 JM Santiago. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/hugo-portfolio/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Encountering AI: On the use of Generative AI in Dungeons &amp; Dragons</title>
-      <link>//localhost:1313/articles/encountering_ai/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/encountering_ai/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/encountering_ai/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/encountering_ai/</guid>
       <description>This blog post delves into the use of Generative AI to lower entry barriers for novice Dungeon Masters in Dungeons &amp;amp; Dragons, detailing a workshop study that showcases how AI tools can enhance narrative development, character creation, and world-building.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/encountering_ai/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/encountering_ai/featured.png" />
     </item>
     
     <item>
       <title>Affective State Change via Procedurally Generated Haptics</title>
-      <link>//localhost:1313/articles/industry_project/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/industry_project/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/industry_project/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/industry_project/</guid>
       <description>Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/industry_project/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/industry_project/featured.png" />
     </item>
     
     <item>
       <title>The AI of Oz: A Framework for Integrating Generative AI in User-Centered Design</title>
-      <link>//localhost:1313/articles/methodology_paper/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/methodology_paper/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/methodology_paper/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/methodology_paper/</guid>
       <description>Our conceptual framework integrates Generative AI into the live-prototyping process of User-Centered Design, transforming traditional methodologies by enabling real-time user feedback and AI-driven simulations to enhance design responsiveness and innovation.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/methodology_paper/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/methodology_paper/featured.png" />
     </item>
     
     <item>
       <title>Utilizing Generative AI for Scenario-Based Second Language Acquisition</title>
-      <link>//localhost:1313/articles/research_project/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/research_project/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/research_project/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/research_project/</guid>
       <description>This blog post explores the intersection of AI and creative writing within the context of Dungeons &amp;amp; Dragons sessions and investigates how Generative Artificial Intelligence (Gen AI) can enhance narrative development, character creation, and world-building, particularly for novice Dungeon Masters (DMs).</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/research_project/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/research_project/featured.png" />
     </item>
     
     <item>
       <title>Rolling the Dice: Imagining Generative AI as a Dungeons &amp; Dragons Storytelling Companion</title>
-      <link>//localhost:1313/articles/rolling_the_dice/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/rolling_the_dice/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/rolling_the_dice/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/rolling_the_dice/</guid>
       <description>In this blog post, I discuss my research on using Generative AI to enhance Dungeons &amp;amp; Dragons gameplay by dynamically generating narratives and character interactions, providing guidelines for AI integration based on real game scenarios.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/rolling_the_dice/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/rolling_the_dice/featured.jpg" />
     </item>
     
     <item>
       <title>Welcome to TREX: Simplifying Machine Learning&#39;s Complexity</title>
-      <link>//localhost:1313/articles/explore_edit_guess/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/explore_edit_guess/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/explore_edit_guess/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/explore_edit_guess/</guid>
       <description>Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/explore_edit_guess/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/explore_edit_guess/featured.jpg" />
     </item>
     
   </channel>

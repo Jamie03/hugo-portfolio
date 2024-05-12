@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MIDI on JM Santiago III</title>
-    <link>//localhost:1313/tags/midi/</link>
+    <link>http://localhost:1313/hugo-portfolio/tags/midi/</link>
     <description>Recent content in MIDI on JM Santiago III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2024 JM Santiago. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/midi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/hugo-portfolio/tags/midi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Affective State Change via Procedurally Generated Haptics</title>
-      <link>//localhost:1313/articles/industry_project/</link>
+      <link>http://localhost:1313/hugo-portfolio/articles/industry_project/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/articles/industry_project/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/articles/industry_project/</guid>
       <description>Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus.</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/industry_project/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/hugo-portfolio/articles/industry_project/featured.png" />
     </item>
     
   </channel>

@@ -2,228 +2,228 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on JM Santiago III</title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/hugo-portfolio/tags/</link>
     <description>Recent content in Tags on JM Santiago III</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2024 JM Santiago. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/hugo-portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Integration</title>
-      <link>//localhost:1313/tags/ai-integration/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/ai-integration/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/ai-integration/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/ai-integration/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>D&amp;D</title>
-      <link>//localhost:1313/tags/dd/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/dd/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/dd/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/dd/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Generative AI</title>
-      <link>//localhost:1313/tags/generative-ai/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/generative-ai/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/generative-ai/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/generative-ai/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>TTRPG</title>
-      <link>//localhost:1313/tags/ttrpg/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/ttrpg/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/ttrpg/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/ttrpg/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Workshop Study</title>
-      <link>//localhost:1313/tags/workshop-study/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/workshop-study/</link>
       <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/workshop-study/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/workshop-study/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>AI in Design</title>
-      <link>//localhost:1313/tags/ai-in-design/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/ai-in-design/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/ai-in-design/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/ai-in-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Audio Generation</title>
-      <link>//localhost:1313/tags/audio-generation/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/audio-generation/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/audio-generation/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/audio-generation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Concentration</title>
-      <link>//localhost:1313/tags/concentration/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/concentration/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/concentration/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/concentration/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Haptics Design</title>
-      <link>//localhost:1313/tags/haptics-design/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/haptics-design/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/haptics-design/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/haptics-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Live-Prototyping</title>
-      <link>//localhost:1313/tags/live-prototyping/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/live-prototyping/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/live-prototyping/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/live-prototyping/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>MIDI</title>
-      <link>//localhost:1313/tags/midi/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/midi/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/midi/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/midi/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>User-Centered Design</title>
-      <link>//localhost:1313/tags/user-centered-design/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/user-centered-design/</link>
       <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/user-centered-design/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/user-centered-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Image Generation</title>
-      <link>//localhost:1313/tags/image-generation/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/image-generation/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/image-generation/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/image-generation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Language Learning</title>
-      <link>//localhost:1313/tags/language-learning/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/language-learning/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/language-learning/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/language-learning/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Text Generation</title>
-      <link>//localhost:1313/tags/text-generation/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/text-generation/</link>
       <pubDate>Sat, 10 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/text-generation/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/text-generation/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Game Design</title>
-      <link>//localhost:1313/tags/game-design/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/game-design/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/game-design/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/game-design/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Tabletop RPG</title>
-      <link>//localhost:1313/tags/tabletop-rpg/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/tabletop-rpg/</link>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/tabletop-rpg/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/tabletop-rpg/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Education Technology</title>
-      <link>//localhost:1313/tags/education-technology/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/education-technology/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/education-technology/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/education-technology/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Machine Learning</title>
-      <link>//localhost:1313/tags/machine-learning/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/machine-learning/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/machine-learning/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/machine-learning/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Software Development</title>
-      <link>//localhost:1313/tags/software-development/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/software-development/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/software-development/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/software-development/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>User Experience</title>
-      <link>//localhost:1313/tags/user-experience/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/user-experience/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/user-experience/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/user-experience/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Visual Programming</title>
-      <link>//localhost:1313/tags/visual-programming/</link>
+      <link>http://localhost:1313/hugo-portfolio/tags/visual-programming/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/visual-programming/</guid>
+      <guid>http://localhost:1313/hugo-portfolio/tags/visual-programming/</guid>
       <description></description>
       
     </item>
