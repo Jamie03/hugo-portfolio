@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Welcome to TREX: Simplifying Machine Learning&#39;s Complexity &middot; JM Santiago III</title>
+  <meta name="title" content="Welcome to TREX: Simplifying Machine Learning&#39;s Complexity &middot; JM Santiago III" />
+  
+  <meta name="description" content="Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers." />
+  <meta name="keywords" content="Machine Learning, Visual Programming, Education Technology, User Experience, Software Development, " />
+  
+  
+  <link rel="canonical" href="https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/hugo-portfolio/css/main.bundle.min.16ef8a6896d8151791996e6789da59a48d35efa92f465864bfebdef24f1b8a6b7b542a9f4a9ca1d2b987d1ac6c72f3ed184dab5eb1db16fa43b0da3255b9f86c.css"
+    integrity="sha512-Fu&#43;KaJbYFReRmW5nidpZpI0176kvRlhkv&#43;ve8k8bimt7VCqfSpyh0rmH0axscvPtGE2rXrHbFvpDsNoyVbn4bA==" />
+  
+  
+  <script type="text/javascript" src="/hugo-portfolio/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/hugo-portfolio/js/main.bundle.min.5e242d5a5006a5b609cd12076f6dd80f6589442dd89054a39a98fdfea85bc9d870bda04ab26d8478073dac781644adbb8923cd32b3dd5687d30978c86e04c1f1.js"
+    integrity="sha512-XiQtWlAGpbYJzRIHb23YD2WJRC3YkFSjmpj9/qhbydhwvaBKsm2EeAc9rHgWRK27iSPNMrPdVofTCXjIbgTB8Q==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/hugo-portfolio/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/hugo-portfolio/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/hugo-portfolio/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/hugo-portfolio/favicon-16x16.png" />
+  <link rel="manifest" href="/hugo-portfolio/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Welcome to TREX: Simplifying Machine Learning&#39;s Complexity" />
+<meta property="og:description" content="Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/" /><meta property="og:image" content="https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/featured.jpg"/><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2021-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-11T00:00:00+00:00" /><meta property="og:site_name" content="JM Santiago III" />
+
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/featured.jpg"/>
+<meta name="twitter:title" content="Welcome to TREX: Simplifying Machine Learning&#39;s Complexity"/>
+<meta name="twitter:description" content="Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers."/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Articles",
+    "name": "Welcome to TREX: Simplifying Machine Learning\u0027s Complexity",
+    "headline": "Welcome to TREX: Simplifying Machine Learning\u0027s Complexity",
+    
+    "abstract": "Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers.",
+    "inLanguage": "en",
+    "url" : "https:\/\/Jamie03.github.io\/hugo-portfolio\/articles\/explore_edit_guess\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jose Maria Santiago III"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-11-11T00:00:00\u002b00:00",
+    "datePublished": "2021-11-11T00:00:00\u002b00:00",
+    
+    "dateModified": "2021-11-11T00:00:00\u002b00:00",
+    
+    "keywords": ["Machine Learning","Visual Programming","Education Technology","User Experience","Software Development"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "2807"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Jose Maria Santiago III" />
+  
+  
+  
+  <link href="mailto:jmsantiagoiii@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/jamie03" rel="me" />
+  
+  
+  <link href="https://www.linkedin.com/in/jmsantiagoiii/" rel="me" />
+  
+  
+  <link href="https://orcid.org/my-orcid?orcid=0000-0002-4730-7865" rel="me" />
+  
+  
+  <link href="https://www.researchgate.net/profile/Jose-Santiago-10" rel="me" />
+  
+  
+  
+  
+
+<script src="/hugo-portfolio/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/hugo-portfolio/" class="text-base font-medium text-gray-500 hover:text-gray-900">JM Santiago III</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/hugo-portfolio/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Home
+    </p>
+</a>
+
+
+            
+            
+  <a href="/hugo-portfolio/articles/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Articles">
+        Articles
+    </p>
+</a>
+
+
+            
+            
+  <a href="/hugo-portfolio/worlds/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Worlds
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/hugo-portfolio/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Home
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/hugo-portfolio/articles/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Articles">
+            Articles
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/hugo-portfolio/worlds/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Worlds
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/hugo-portfolio/articles/explore_edit_guess/featured_hu5459c0360c2b0cb7a147d2df0eb350ca_2105655_1200x0_resize_q75_box.jpg);"></div>
+        
+    
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Welcome to TREX: Simplifying Machine Learning's Complexity
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2021-11-11 00:00:00 &#43;0000 UTC">11 November 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">14 mins</span><span class="px-2 text-primary-500">&middot;</span>
+
+
+<script type="text/javascript" src="/hugo-portfolio/js/zen-mode.min.ccc8b2a0c4505216444ca25530c7328aa0bef94f43dabaf3e598e1b4271de9eec76c1cb35917471a4f7ccb8d84051b3acef42baa30724ac3a667fcf1fec4432a.js" integrity="sha512-zMiyoMRQUhZETKJVMMcyiqC&#43;&#43;U9D2rrz5ZjhtCcd6e7HbByzWRdHGk98y42EBRs6zvQrqjBySsOmZ/zx/sRDKg=="></script>
+
+<span class="mb-[2px]">
+    <span id="zen-mode-button"
+          class="text-lg hover:text-primary-500"
+          title="Enable zen mode"
+          data-title-i18n-disable="Enable zen mode"
+          data-title-i18n-enable="Disable zen mode">
+        <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg>
+  </span>
+
+</span>
+    </span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/hugo-portfolio/tags/machine-learning/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Machine Learning
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/hugo-portfolio/tags/visual-programming/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Visual Programming
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/hugo-portfolio/tags/education-technology/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Education Technology
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/hugo-portfolio/tags/user-experience/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    User Experience
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/hugo-portfolio/tags/software-development/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Software Development
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#life-finds-a-way">Life Finds a Way</a></li>
+    <li><a href="#spared-no-expense-in-development">Spared No Expense in Development</a>
+      <ul>
+        <li><a href="#building-trex-integrating-visual-and-computational-elements">Building TREX: Integrating Visual and Computational Elements</a></li>
+        <li><a href="#visual-programming-meets-machine-learning">Visual Programming Meets Machine Learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#iterations-on-the-path-to-discovery">Iterations on the Path to Discovery</a>
+      <ul>
+        <li><a href="#first-iteration-initial-reactions-and-basic-usability">First Iteration: Initial Reactions and Basic Usability</a></li>
+        <li><a href="#second-iteration-identifying-missing-features">Second Iteration: Identifying Missing Features</a></li>
+        <li><a href="#third-iteration-reacting-to-enhanced-features">Third Iteration: Reacting to Enhanced Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#evolution-of-the-tool">Evolution of the Tool</a>
+      <ul>
+        <li><a href="#google-blockly-integration">Google Blockly Integration</a></li>
+        <li><a href="#sci-kit-learns-machine-learning-libraries">Sci-kit Learn&rsquo;s Machine Learning Libraries</a></li>
+        <li><a href="#interactive-regression-map-and-real-time-feedback">Interactive Regression Map and Real-Time Feedback</a></li>
+        <li><a href="#code-export-and-import-capabilities">Code Export and Import Capabilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#holding-on-to-your-butts-overcoming-development-hurdles">Holding On to Your Butts: Overcoming Development Hurdles</a>
+      <ul>
+        <li><a href="#the-balancing-act">The Balancing Act</a></li>
+        <li><a href="#flexibility-vs-user-friendliness">Flexibility vs. User-Friendliness</a></li>
+        <li><a href="#user-feedback-a-double-edged-sword">User Feedback: A Double-Edged Sword</a></li>
+      </ul>
+    </li>
+    <li><a href="#key-learnings">Key Learnings</a></li>
+    <li><a href="#they-do-move-in-herds-seeing-trex-in-action">They Do Move in Herds: Seeing TREX in Action</a>
+      <ul>
+        <li><a href="#measuring-usability-with-system-usability-scale-sus">Measuring Usability with System Usability Scale (SUS)</a></li>
+        <li><a href="#user-testimonials-and-feedback">User Testimonials and Feedback</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-of-user-feedback">Conclusion of User Feedback</a></li>
+    <li><a href="#envisioning-tomorrow">Envisioning Tomorrow</a>
+      <ul>
+        <li><a href="#expanding-machine-learning-capabilities">Expanding Machine Learning Capabilities</a></li>
+        <li><a href="#enhancing-customization-and-flexibility">Enhancing Customization and Flexibility</a></li>
+        <li><a href="#integration-with-other-educational-tools">Integration with Other Educational Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#life-finds-a-way">Life Finds a Way</a></li>
+    <li><a href="#spared-no-expense-in-development">Spared No Expense in Development</a>
+      <ul>
+        <li><a href="#building-trex-integrating-visual-and-computational-elements">Building TREX: Integrating Visual and Computational Elements</a></li>
+        <li><a href="#visual-programming-meets-machine-learning">Visual Programming Meets Machine Learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#iterations-on-the-path-to-discovery">Iterations on the Path to Discovery</a>
+      <ul>
+        <li><a href="#first-iteration-initial-reactions-and-basic-usability">First Iteration: Initial Reactions and Basic Usability</a></li>
+        <li><a href="#second-iteration-identifying-missing-features">Second Iteration: Identifying Missing Features</a></li>
+        <li><a href="#third-iteration-reacting-to-enhanced-features">Third Iteration: Reacting to Enhanced Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#evolution-of-the-tool">Evolution of the Tool</a>
+      <ul>
+        <li><a href="#google-blockly-integration">Google Blockly Integration</a></li>
+        <li><a href="#sci-kit-learns-machine-learning-libraries">Sci-kit Learn&rsquo;s Machine Learning Libraries</a></li>
+        <li><a href="#interactive-regression-map-and-real-time-feedback">Interactive Regression Map and Real-Time Feedback</a></li>
+        <li><a href="#code-export-and-import-capabilities">Code Export and Import Capabilities</a></li>
+      </ul>
+    </li>
+    <li><a href="#holding-on-to-your-butts-overcoming-development-hurdles">Holding On to Your Butts: Overcoming Development Hurdles</a>
+      <ul>
+        <li><a href="#the-balancing-act">The Balancing Act</a></li>
+        <li><a href="#flexibility-vs-user-friendliness">Flexibility vs. User-Friendliness</a></li>
+        <li><a href="#user-feedback-a-double-edged-sword">User Feedback: A Double-Edged Sword</a></li>
+      </ul>
+    </li>
+    <li><a href="#key-learnings">Key Learnings</a></li>
+    <li><a href="#they-do-move-in-herds-seeing-trex-in-action">They Do Move in Herds: Seeing TREX in Action</a>
+      <ul>
+        <li><a href="#measuring-usability-with-system-usability-scale-sus">Measuring Usability with System Usability Scale (SUS)</a></li>
+        <li><a href="#user-testimonials-and-feedback">User Testimonials and Feedback</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion-of-user-feedback">Conclusion of User Feedback</a></li>
+    <li><a href="#envisioning-tomorrow">Envisioning Tomorrow</a>
+      <ul>
+        <li><a href="#expanding-machine-learning-capabilities">Expanding Machine Learning Capabilities</a></li>
+        <li><a href="#enhancing-customization-and-flexibility">Enhancing Customization and Flexibility</a></li>
+        <li><a href="#integration-with-other-educational-tools">Integration with Other Educational Tools</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>When I began my journey into machine learning (ML), the landscape was as daunting as it was exciting. As a programmer with a background primarily in software development, I understood code, but ML concepts often felt like trying to read a script from an entirely different movie. This gap between understanding traditional programming and grappling with ML’s abstract concepts was a challenge I faced daily.</p>
+
+
+<h2 class="relative group">Life Finds a Way 
+    <div id="life-finds-a-way" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#life-finds-a-way" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>I remember the frustration of trying to piece together the functionality of ML models without seeing the immediate impacts of code changes. It wasn&rsquo;t just about writing code; it was about understanding the story it told through data. This barrier is what motivated me to develop <strong>TREX (Toolbox for Regression Experiments)</strong>, aiming to make ML accessible, especially for visual programmers like myself who thrive on seeing their code come to life.</p>
+<p>In this blog post, I&rsquo;ll take you through the creation of TREX, from the initial spark of inspiration to the final user feedback. Whether you&rsquo;re a novice eager to dip your toes into machine learning or a seasoned programmer looking for a more intuitive way to interact with data, I hope to share insights that will illuminate your path and make the journey less intimidating.</p>
+
+
+<h2 class="relative group">Spared No Expense in Development 
+    <div id="spared-no-expense-in-development" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#spared-no-expense-in-development" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The idea for TREX originated from a blend of necessity and aspiration. As a programmer transitioning into the world of machine learning, I recognized the steep learning curve that many, including myself, faced. The tools available were either too advanced, obscuring the learning process, or overly simplified, offering little insight into the underlying mechanics. What if there was a middle ground? A tool that not only demystified machine learning but also engaged users in a visual and interactive manner? This question led to the conception of TREX.</p>
+
+
+<h3 class="relative group">Building TREX: Integrating Visual and Computational Elements 
+    <div id="building-trex-integrating-visual-and-computational-elements" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#building-trex-integrating-visual-and-computational-elements" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Developing TREX required a marriage of visual programming and machine learning functionality. The first component was the visual programming interface. For this, I turned to Google&rsquo;s Blockly framework, a widely respected platform known for enabling visual code editing. Blockly allows users to assemble code blocks as if they were pieces of a puzzle. This approach is not just user-friendly; it visually represents the structure and flow of programming logic, making it ideal for novice programmers who benefit from seeing how individual pieces fit together.</p>
+<p>The second component involved the computational backbone of TREX. To handle the machine learning operations, particularly linear regression, I integrated Sci-kit Learn, a powerful library for machine learning in Python. Sci-kit Learn provided the necessary tools to implement robust machine learning algorithms efficiently and effectively. By combining it with Blockly, I could offer users a hands-on experience where they could manipulate data and immediately see the effects of their changes through real-time visual feedback.</p>
+
+
+<h3 class="relative group">Visual Programming Meets Machine Learning 
+    <div id="visual-programming-meets-machine-learning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#visual-programming-meets-machine-learning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The integration of Blockly and Sci-kit Learn into TREX was a pivotal development. Users could drag and drop blocks that represent different aspects of the machine learning pipeline—data preprocessing, model training, and results evaluation. Behind each block, Sci-kit Learn functions were hard at work, calculating predictions, regressions, and various metrics that users could explore and modify through simple interactions.</p>
+<p>The goal with this setup is not only to reduce the intimidation factor associated with coding but also provided a tangible way to understand and control machine learning processes. Each block adjustment or addition was a lesson in ML, revealing how changes in parameters or data manipulation could impact outcomes. This immediate feedback loop was crucial for learning and experimentation, bridging the gap between abstract concepts and practical application.</p>
+
+
+<h2 class="relative group">Iterations on the Path to Discovery 
+    <div id="iterations-on-the-path-to-discovery" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#iterations-on-the-path-to-discovery" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The development of TREX was firmly rooted in a user-centric design philosophy. Recognizing that effective tools are built not just by engineers but with users, we embraced an iterative design process. This approach allowed us to continuously refine and evolve TREX based on real user feedback and interactions. Each iteration brought us closer to a tool that could truly meet the needs of novice programmers venturing into the world of machine learning.</p>
+<img class="thumbnailshadow" src="img/The-iterative-framework-outlining-the-different-phases-in-the-design-and-development-of_W640.jpg" alt="The iterative framework outlining the different phases in the design and development of TREX.">
+
+
+<h3 class="relative group">First Iteration: Initial Reactions and Basic Usability 
+    <div id="first-iteration-initial-reactions-and-basic-usability" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#first-iteration-initial-reactions-and-basic-usability" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The initial prototype of TREX was simple. Its primary aim was to introduce the concept of a visual programming tool for machine learning and gauge initial reactions. We wanted to understand how users felt about the tool and how they interacted with its basic features. This phase was less about technical perfection and more about validation of the concept. Did users find the idea of visually assembling machine learning models appealing? Could they intuitively understand what each block was supposed to do?</p>
+<p>Feedback from this phase was invaluable. Users expressed enthusiasm about the visual approach, which confirmed we were on the right track. However, they also highlighted several areas for improvement, such as the need for more detailed feedback on the machine learning process and clearer indications of block functionalities.</p>
+
+
+<h3 class="relative group">Second Iteration: Identifying Missing Features 
+    <div id="second-iteration-identifying-missing-features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#second-iteration-identifying-missing-features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Armed with insights from the first iteration, we focused the second iteration on expanding TREX’s functionality. Users had identified key features that were missing, which could enhance their learning experience and provide a more robust tool. We introduced new code blocks for data handling and analysis, improved error messages, and integrated a more comprehensive set of machine learning functions.</p>
+<p>This iteration was also about refining the user interface to make it more intuitive. We needed to ensure that each component of TREX was self-explanatory and that users would not feel overwhelmed by the options available. The feedback from this phase was crucial, as it directly influenced the additions and changes we made, ensuring that TREX was evolving in line with user needs and expectations.</p>
+
+
+<h3 class="relative group">Third Iteration: Reacting to Enhanced Features 
+    <div id="third-iteration-reacting-to-enhanced-features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#third-iteration-reacting-to-enhanced-features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The third and final iteration before the official release focused on implementing the feedback from the second iteration. We introduced advanced features like the regression map visualization, which allowed users to see a graphical representation of the data trends and patterns. Additionally, we added functionality to export and import code, empowering users to take their projects beyond the TREX environment.</p>
+<p>This phase was critical for assessing the usability and effectiveness of the new features. We observed how users interacted with the enhancements and gathered data on their impact on the user’s ability to understand and utilize machine learning concepts more effectively.</p>
+<img class="thumbnailshadow" src="img/The-TREX-General-Interface-It-is-composed-of-three-main-parts-i-The-Sandbox-section_W640.jpg" alt="The TREX General Interface. It is composed of three main parts: (i) The Sandbox section, (ii) The Code Translation and Output Section and (iii) The Regression Visualisation section. There is a toolbox on the left where users can pick CodeBlocks from the different categories presented. There is a workspace section where users can drag into the CodeBlocks picked from the toolbox. The CodeBlocks can be rearranged and have values keyed in. A code interface section generates the equivalent python code of the CodeBlocks that they have selected. This helps the user translate the visuals into runnable code they can execute should they wish to port into different platforms. The logs messages are also visible (in green) that shows the possible console output of the code. Lastly, a visualization chart can be seen, which helps the user interpret the recently completed regression experiment.">
+
+
+<h2 class="relative group">Evolution of the Tool 
+    <div id="evolution-of-the-tool" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#evolution-of-the-tool" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>As TREX developed through its iterative phases, each component and feature was crafted to enhance the learning and usability for users, especially those new to machine learning. The tool&rsquo;s evolution was marked by the addition of innovative features, designed to bridge the gap between novice understanding and advanced machine learning techniques. Here, I&rsquo;ll delve into some of the core features that define TREX, reflecting on how each contributes to the tool&rsquo;s goal of making machine learning more approachable and interactive.</p>
+
+
+<h3 class="relative group">Google Blockly Integration 
+    <div id="google-blockly-integration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#google-blockly-integration" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>One of the pivotal features of TREX is its use of Google&rsquo;s Blockly framework. This integration allows users to visually piece together their machine learning models using draggable code blocks. This visual approach is not just about simplifying the coding process—it&rsquo;s about making the logic behind machine learning tangible. Users can see how data flows from one function to another, how models are trained, and how predictions are generated, all through a series of connected blocks.</p>
+
+
+<h3 class="relative group">Sci-kit Learn&rsquo;s Machine Learning Libraries 
+    <div id="sci-kit-learns-machine-learning-libraries" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#sci-kit-learns-machine-learning-libraries" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>At the heart of TREX&rsquo;s computational power is the Sci-kit Learn library, which supports all the machine learning operations within the tool. By leveraging Sci-kit Learn, TREX provides users with access to a range of robust, pre-built ML algorithms and functions that are essential for building and testing machine learning models. This backend ensures that while the front end remains user-friendly and accessible, the underlying technology is powerful and capable of performing complex machine learning tasks.</p>
+
+
+<h3 class="relative group">Interactive Regression Map and Real-Time Feedback 
+    <div id="interactive-regression-map-and-real-time-feedback" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#interactive-regression-map-and-real-time-feedback" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>A standout feature added in the later iterations of TREX is the interactive regression map. This visualization tool allows users to immediately see the effects of their programming decisions. For instance, as users adjust parameters or data sets within the Blockly interface, the regression map updates in real-time, providing visual feedback on how those changes affect the model&rsquo;s predictions. This feature not only aids in understanding complex concepts but also encourages experimentation and learning through immediate feedback.</p>
+
+
+<h3 class="relative group">Code Export and Import Capabilities 
+    <div id="code-export-and-import-capabilities" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#code-export-and-import-capabilities" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Recognizing that learning and real-world application are two sides of the same coin, TREX includes features to export and import code. This functionality enables users to take the code they&rsquo;ve constructed visually and implement it in more traditional programming environments. Whether it&rsquo;s for further refinement, integration into larger projects, or simply to learn how the visual blocks translate into written code, this feature provides a bridge between the educational environment of TREX and the practical demands of real-world programming.</p>
+<p>The development of these features was guided by direct user feedback and a clear understanding of the educational challenges faced by novice machine learners. Each feature was carefully designed to not only simplify the learning process but also to empower users by providing them with the tools to see immediate results and gain confidence in their abilities to manipulate and understand data.</p>
+
+
+<h2 class="relative group">Holding On to Your Butts: Overcoming Development Hurdles 
+    <div id="holding-on-to-your-butts-overcoming-development-hurdles" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#holding-on-to-your-butts-overcoming-development-hurdles" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Throughout the development of TREX, we encountered several challenges that shaped our approach and deepened our understanding of creating educational tools. These challenges were not just obstacles but opportunities that allowed us to refine TREX into a tool that could genuinely benefit users by simplifying complex concepts through visual programming.</p>
+
+
+<h3 class="relative group">The Balancing Act 
+    <div id="the-balancing-act" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#the-balancing-act" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>One of the significant challenges we faced was integrating Google Blockly with the Sci-kit Learn libraries. Blockly is fantastic for visual logic construction, but it naturally limits the flexibility that experienced programmers might expect. This is because Blockly abstracts code into blocks, which simplifies processes but also removes the granular control that traditional coding provides.</p>
+<p>Similarly, while Sci-kit Learn is a robust library for machine learning, it assumes a certain level of structure and cleanliness in the data it processes. This requirement often clashed with the more dynamic and varied inputs that come from Blockly&rsquo;s visual interface. Balancing these aspects—maintaining the educational simplicity of Blockly while leveraging the power of Sci-kit Learn—required careful design and constant tweaking of how the two frameworks interact.</p>
+
+
+<h3 class="relative group">Flexibility vs. User-Friendliness 
+    <div id="flexibility-vs-user-friendliness" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#flexibility-vs-user-friendliness" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Another significant challenge was striking the right balance between flexibility and user-friendliness. The more options and features we added to TREX, the more complex it became for novice users. Our goal was to keep the tool intuitive and accessible, which sometimes meant sacrificing advanced features that could have introduced confusion.</p>
+<p>This limitation was particularly evident in the tool&rsquo;s flexibility to handle different types of data or to allow users to write highly customized code. While TREX provides a solid foundation for learning and applying machine learning concepts, it cannot yet match the flexibility of directly coding in Python or using Sci-kit Learn independently. We had to accept that while TREX is a powerful learning tool, it might not fulfill the needs of more advanced users without further adaptations.</p>
+
+
+<h3 class="relative group">User Feedback: A Double-Edged Sword 
+    <div id="user-feedback-a-double-edged-sword" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#user-feedback-a-double-edged-sword" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Gathering and integrating user feedback was both incredibly valuable and challenging. Each iteration brought useful insights, but also a barrage of suggestions and requests that sometimes pulled the development in different directions. Learning to prioritize feedback that aligned with our educational goals versus feature requests that catered to more niche use cases was a critical skill we developed.</p>
+
+
+<h2 class="relative group">Key Learnings 
+    <div id="key-learnings" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#key-learnings" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Through these challenges, several key learnings emerged:</p>
+<ol>
+<li><strong>The importance of clear educational goals:</strong> Keeping the focus on education helped prioritize features and maintain the tool&rsquo;s accessibility.</li>
+<li><strong>Flexibility in design:</strong> Being flexible in our approach allowed us to adapt features based on user feedback while keeping technical limitations in mind.</li>
+<li><strong>Balancing complexity:</strong> We learned to balance the introduction of complex features with maintaining an intuitive user experience, ensuring that the tool remains useful without becoming overwhelming.</li>
+</ol>
+
+
+<h2 class="relative group">They Do Move in Herds: Seeing TREX in Action 
+    <div id="they-do-move-in-herds-seeing-trex-in-action" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#they-do-move-in-herds-seeing-trex-in-action" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The true test of any educational tool lies in its impact on users—how effectively it meets their learning needs and how users perceive its value. For TREX, we meticulously gathered and analyzed user feedback through each iteration to measure its usability and educational impact. This feedback not only validated our efforts but also illuminated areas for further development.</p>
+
+
+<h3 class="relative group">Measuring Usability with System Usability Scale (SUS) 
+    <div id="measuring-usability-with-system-usability-scale-sus" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#measuring-usability-with-system-usability-scale-sus" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>One of the primary metrics we used to gauge the impact of TREX was the System Usability Scale (SUS), a reliable tool for assessing the usability of various systems. SUS scores provided a quantitative measure of TREX&rsquo;s effectiveness and user satisfaction across different versions of the tool. These scores were crucial for understanding how users interacted with TREX and how intuitive they found the tool during each iteration.</p>
+<ul>
+<li><strong>First Iteration:</strong> The initial prototype scored relatively low on the SUS scale, indicating that while the concept was well-received, the execution needed refinement. Users appreciated the visual approach but found some aspects of the interface confusing.</li>
+<li><strong>Second Iteration:</strong> After incorporating the first round of feedback, the SUS scores improved significantly. This improvement was a strong indicator that the additions and refinements were in line with user expectations and needs.</li>
+<li><strong>Third Iteration:</strong> The final iteration, with the inclusion of features like the regression map and code export/import capabilities, received the highest SUS scores. Users reported that these features greatly enhanced their understanding and usability of the tool, confirming that the iterative design process was successful in addressing user needs.</li>
+</ul>
+
+
+<h3 class="relative group">User Testimonials and Feedback 
+    <div id="user-testimonials-and-feedback" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#user-testimonials-and-feedback" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Beyond the numbers, qualitative feedback from users provided insights into how TREX was used and the benefits it offered. Many users expressed how TREX demystified aspects of machine learning that had previously seemed inaccessible:</p>
+<ul>
+<li>&ldquo;TREX made it possible for me to see the effects of my actions in real-time, which helped me understand complex concepts much faster.&rdquo;</li>
+<li>&ldquo;I never thought I could handle machine learning tasks, but TREX&rsquo;s intuitive design made it surprisingly approachable.&rdquo;</li>
+</ul>
+
+
+<h2 class="relative group">Conclusion of User Feedback 
+    <div id="conclusion-of-user-feedback" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion-of-user-feedback" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The overall response to TREX has been overwhelmingly positive. The tool not only achieved its goal of making machine learning more accessible but also encouraged users to explore and learn independently. This feedback is a testament to the success of the user-centric design process and the effectiveness of combining visual programming with machine learning education.</p>
+
+
+<h2 class="relative group">Envisioning Tomorrow 
+    <div id="envisioning-tomorrow" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#envisioning-tomorrow" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>As TREX continues to evolve, the journey from a basic prototype to a comprehensive learning tool sets the stage for future developments. The feedback and data collected through user interaction have been instrumental in shaping the roadmap ahead. Looking forward, there are several areas where TREX can expand and improve, broadening its impact and usability.</p>
+
+
+<h3 class="relative group">Expanding Machine Learning Capabilities 
+    <div id="expanding-machine-learning-capabilities" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#expanding-machine-learning-capabilities" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Currently focused on linear regression, one of the natural next steps for TREX is to incorporate more diverse machine learning models and algorithms. By integrating additional methods like classification, clustering, and more advanced regression techniques, TREX can cater to a wider range of user needs and educational scenarios. Each addition will be designed with the same user-friendly interface to maintain accessibility while enhancing functionality.</p>
+
+
+<h3 class="relative group">Enhancing Customization and Flexibility 
+    <div id="enhancing-customization-and-flexibility" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#enhancing-customization-and-flexibility" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>While TREX thrives on its user-friendly design, there is a notable demand for increased customization and flexibility. Future versions could offer more advanced settings that allow users to tweak their models more granularly without losing the intuitive nature of the tool. This could include more detailed data preprocessing options, variable transformations, and perhaps even custom block creation for users who wish to extend their learning further.</p>
+
+
+<h3 class="relative group">Integration with Other Educational Tools 
+    <div id="integration-with-other-educational-tools" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#integration-with-other-educational-tools" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Another promising direction is integrating TREX with other educational platforms and tools. This integration would provide a seamless experience for users who are using multiple tools in their learning journey. For example, connecting TREX with data science and statistics platforms could provide a holistic learning environment where users can manage data analysis, machine learning, and data visualization all in one place.</p>
+
+
+<h2 class="relative group">Conclusion 
+    <div id="conclusion" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#conclusion" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The development and refinement of TREX have been a journey of discovery, learning, and adaptation. Through each iteration, from initial concept to the latest release, TREK has strived to demystify machine learning for novices, providing an engaging, educational, and empowering experience. The tool has illuminated the path for many who were once bewildered by the complexities of machine learning, offering them the tools to not only understand but also apply ML techniques in practical ways.</p>
+<p>As machine learning continues to evolve and become more integral in various fields, tools like TREX will play a crucial role in making this powerful technology accessible to all. The journey continues, and the possibilities are as vast as they are exciting. If you&rsquo;re intrigued by the possibilities and want to dive deeper into the research behind these applications, I encourage you to read our full paper. You can find it <a href="https://www.researchgate.net/publication/356064180_Explore_Edit_Guess_Understanding_Novice_Programmers%27_Use_of_CodeBlocks_for_Regression_Experiments?utm_source=twitter&amp;rgutm_meta1=eHNsLTRHeEFDTFVZcGhpOWJWemM4RXhVRGJCM2hLeFdzLzNyeXRiVzNUSHRoNy81WG8yUmlLQ0lsMklIZWsvR2NSb2diRDBGOTBHMTlXMlQ2RHFJQ0U5dkxXTT0%3D"   target="_blank">
+    here</a>!</p>
+
+        </div>
+        
+        
+
+        
+        
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://twitter.com/intent/tweet/?url=https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/&amp;text=Welcome%20to%20TREX:%20Simplifying%20Machine%20Learning%27s%20Complexity"
+      title="Tweet on Twitter"
+      aria-label="Tweet on Twitter"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://reddit.com/submit/?url=https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/&amp;resubmit=true&amp;title=Welcome%20to%20TREX:%20Simplifying%20Machine%20Learning%27s%20Complexity"
+      title="Submit to Reddit"
+      aria-label="Submit to Reddit"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="mailto:?body=https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/&amp;subject=Welcome%20to%20TREX:%20Simplifying%20Machine%20Learning%27s%20Complexity"
+      title="Send via email"
+      aria-label="Send via email"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+          
+      </div>
+     
+      
+      
+        
+        
+      <script>
+        var oid = "views_articles\/explore_edit_guess\/index.md"
+        var oid_likes = "likes_articles\/explore_edit_guess\/index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/hugo-portfolio/js/page.min.b06a29d42a4ed16787978e2eee1e8c797b7698db2bc14ccee78f5c80ac566fc996190a73ad80a5e987558474b20b96fa38f7d85b405f165ff72b7b163c5ad11b.js" integrity="sha512-sGop1CpO0WeHl44u7h6MeXt2mNsrwUzO549cgKxWb8mWGQpzrYCl6YdVhHSyC5b6OPfYW0BfFl/3K3sWPFrRGw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/hugo-portfolio/articles/rolling_the_dice/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Rolling the Dice: Imagining Generative AI as a Dungeons & Dragons Storytelling Companion</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-04-04 00:00:00 &#43;0000 UTC">4 April 2023</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      © 2024 JM Santiago. All Rights Reserved.
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/hugo-portfolio/js/process.min.62060bb247f4de2b6dde45903668fefb68d792f365587605177b1227c0cf43588701edaca0cb40e2c8e2789bd5ce67c1d2a215b9fb258c3496a7cd25e7cb5fdf.js" integrity="sha512-YgYLskf03itt3kWQNmj&#43;&#43;2jXkvNlWHYFF3sSJ8DPQ1iHAe2soMtA4sjieJvVzmfB0qIVufsljDSWp80l58tf3w=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://Jamie03.github.io/hugo-portfolio/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

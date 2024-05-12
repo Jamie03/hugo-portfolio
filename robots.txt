@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://Jamie03.github.io/hugo-portfolio/sitemap.xml

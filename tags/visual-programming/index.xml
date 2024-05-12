@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Programming on JM Santiago III</title>
+    <link>https://Jamie03.github.io/hugo-portfolio/tags/visual-programming/</link>
+    <description>Recent content in Visual Programming on JM Santiago III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2024 JM Santiago. All Rights Reserved.</copyright>
+    <lastBuildDate>Thu, 11 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://Jamie03.github.io/hugo-portfolio/tags/visual-programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to TREX: Simplifying Machine Learning&#39;s Complexity</title>
+      <link>https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/</guid>
+      <description>Dive into our detailed blog post on the development of TREX, a revolutionary tool designed to make machine learning accessible for visual programmers. From the inception to the latest improvements, learn how we combined Google Blockly and Sci-kit Learn to create a user-friendly platform for novice programmers.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://Jamie03.github.io/hugo-portfolio/articles/explore_edit_guess/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
