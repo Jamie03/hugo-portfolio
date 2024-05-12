@@ -1,6 +1,6 @@
 ---
 title: "Major Cities of Valeria"
-date: 2023-01-01
+date: 2023-01-03
 draft: false
 ---
 Welcome to the mystical realm of Valeria, a land where the threads of magic and the gears of technology intertwine in a perpetual struggle for dominance. This nation is starkly divided into eastern and western regions, each boasting its own distinct flavor yet contributing to the rich tapestry of the country’s diverse landscape. Here, expansive rural areas meld seamlessly with teeming urban centers, creating a striking juxtaposition between the tranquility of nature and the bustling rhythm of city life.

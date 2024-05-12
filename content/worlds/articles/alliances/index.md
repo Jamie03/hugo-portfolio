@@ -1,12 +1,15 @@
 ---
 title: "Alliances in Valeria"
-date: 2024-01-02
+date: 2023-01-02
 draft: false
 ---
+In the dynamic landscape of Valeria, alliances and politics weave a complex web that binds the realm together, setting the stage for both unity and discord. At the heart of this intricate network are the valiant Purple Dragon Knights, champions of order and guardians of the kingdom, whose influence is felt in every major city. Their rigid hierarchy and the loyalty they command shape much of Valeria's internal security. Contrastingly, the clandestine workings of the Felgrand Syndicates introduce a darker, more cunning play for power, with their five major factions manipulating everything from technology to the city’s very pulse of life. Meanwhile, the High Families of Maleketh embody aristocratic dominance, each holding sway over critical sectors of commerce and culture, their opulent influence a testament to generations of accrued power and wealth. 
+
+These major forces, alongside the valorous Talon Hunters at the fringes of civilization, ensure that Valeria is a realm where allegiances are as valuable as the magic and machinery that fuel its existence, and where every alliance or rivalry can alter the balance of power in profound ways. This is a land where politics are as deadly as warfare, and survival often depends on the cunning to navigate these treacherous waters.
+
 ## The Purple Dragon Knights
 
 <img class="thumbnailshadow" src="img/pdk.webp" alt="Here is the crest design for the Purple Dragon Knights. This regal emblem captures the essence of the noble order, prominently featuring a majestic purple dragon, symbolizing their heritage and valor, with medieval motifs that reflect their bravery and loyalty to the kingdom of Valeria.">
-
 
 In the kingdom of Valeria, there exists a noble and chivalrous order known as the Purple Dragon Knights. This esteemed order was founded many centuries ago in honor of the ancient dragon Reigedyrth, who had aided the late Queen Valeria in her quest to unify the kingdom.
 
@@ -44,13 +47,23 @@ Though they are few in number, the Purple Dragon Knights are a formidable force,
 
 ## The Felgrand Syndicates
 
+<img class="thumbnailshadow" src="img/syn.webp" alt="Here is the feature image of the Syndicates of Felgrand, vividly capturing the diverse and powerful factions within the city's steampunk metropolis. Each syndicate representative is uniquely depicted, showcasing their individual attributes and influence within the intricate social and economic structure of Felgrand.">
+
+In the heart of the steampunk metropolis of Felgrand, where the smoke of industry mingles with the arcane, the Felgrand Syndicates hold dominion. These powerful factions are not merely criminal organizations, but rather complex pillars of a shadow governance that deeply influences the city's heartbeat. Each syndicate, distinct in its purpose and method, contributes to the intricate tapestry that is Felgrand’s social and economic structure.
+
 1. **Coalition of the People** - This syndicate is unique in that it offers basic support to the people of Felgrand, akin to that of a traditional government. The Coalition of the People is led by a council of representatives from various walks of life, and its goal is to ensure that the needs of the city's citizens are met. The Coalition is often viewed as a necessary evil by the other criminal syndicates, as its power and influence gives it a measure of control over the city's population. However, the Coalition's leaders are determined to use their influence for the greater good, even if it means making difficult and unpopular decisions.
+
 2. **Arachnid’s Fang** - This syndicate is known for its ruthlessness and efficiency, and for its ironclad grip on the city's mercenary guild. The Arachnid's Fang is named for its leader, an enigmatic figure known only as the Spider Queen. Under her guidance, the syndicate has become a powerful force within Felgrand's criminal underworld, providing skilled mercenaries and assassins to the highest bidder. Those who cross the Spider Queen or her minions do so at their own peril, for the Arachnid's Fang is swift to deliver its venomous justice.
+
 3. **Legio Ferrum** - This syndicate is responsible for training soldiers and building armies in the style of ancient Rome. The Legion Ferrum is highly organized and disciplined, and its members are known for their ironclad loyalty and unswerving dedication to duty. The legion is led by a stern and uncompromising figure known as the Iron General, who is feared and respected by all who serve under him.
+
 4. **Copper Crown Consortium** - This syndicate oversees the city's merchants guild and wields immense power over Felgrand's economy. The Consortium is known for its shrewd business sense and its willingness to use any means necessary to achieve its goals. The Consortium's leader, a wily and cunning figure known as the Copper King, is feared and respected in equal measure, and those who cross him are often left penniless and destitute.
+
 5. **The Machinist Union** - The union is a powerful and respected organization that is at the forefront of steampunk technology. The union was founded by the Felgrand family, and it has been instrumental in driving the city's technological advancements. As a neutral entity, the union has managed to avoid becoming embroiled in the power struggles of the other criminal organizations, though its leaders must constantly navigate a complex web of alliances and betrayals to maintain the union's position of power and influence.
 
 ## High Families of Maleketh
+
+<img class="thumbnailshadow" src="img/high_families.webp" alt="Here is the grand feature image depicting the four patriarchs of the High Families of Maleketh, each represented by their unique D&D races and set against backgrounds that symbolize their industry and influence within the city. This artwork captures their combined power and the essence of their roles in Maleketh's economy and society.">
 
 The High Families of Maleketh are among the wealthiest and most influential clans in all of Valeria. They have a long history of power and authority, having been responsible for the growth and prosperity of the city for generations. Each family has their own specialty and expertise, with a network of loyal servants and workers who ensure their success and dominance over their respective industries.
 
@@ -61,7 +74,10 @@ The High Families of Maleketh are among the wealthiest and most influential clan
 
 Together, the High Families of Maleketh hold immense power and influence, each controlling a vital aspect of the city's economy and society. Their wealth and resources make them both admired and feared, and they are always seeking to expand their reach and maintain their position of dominance in the region.
 
-### The Hunting Guild
+## The Hunting Guild
+
+<img class="thumbnailshadow" src="img/hunt.webp" alt="Here is the feature image depicting the Talon Hunters of Taloncroft. The scene vividly captures the guild members in action, dressed in their rugged hunting gear, set against the backdrop of their town and the surrounding mysterious forests. This portrayal emphasizes their bravery, community spirit, and the legendary status they hold in protecting their region.">
+
 In the small town of Taloncroft, on the border of Felgrand and Maleketh, a brave guild of hunters resides. They are known as the Talon Hunters, and their legend is known throughout the land.
 
 These hunters are a group of skilled warriors, known for their bravery and their unwavering commitment to the safety of Taloncroft and its people. They hunt down dangerous beasts, witches, undead, and other monstrosities, and show no mercy to any prey that threatens the safety of the town.

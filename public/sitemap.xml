@@ -33,12 +33,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/hugo-portfolio/worlds/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://localhost:1313/hugo-portfolio/worlds/articles/pantheon/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -59,6 +53,12 @@
   <url>
     <loc>http://localhost:1313/hugo-portfolio/articles/rolling_the_dice/</loc>
     <lastmod>2023-04-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/hugo-portfolio/worlds/</loc>
+    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

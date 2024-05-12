@@ -1,4 +1,8 @@
-## Welcome to Valeria!
+---
+description: "A collection of articles for my D&D worldbuilding"
+date: 2023-01-01
+---
+# Welcome to Valeria!
 In the land of Valeria, the forces of magic and technology collide in a battle for supremacy. Divided into two regions, the west and east, Valeria is a land of great contrast and diversity, where vast countryside and bustling cities exist side by side. The five major cities of Maleketh, Felgrand, Timmaeus, Boljaw, and Yarlford each have their own unique character and challenges, from the corrupt criminal organizations of Felgrand to the powerful High Families of Maleketh.
 
 <img class="thumbnailshadow" src="img/valeria map.png" alt="A map of the fictional country of Valeria">
