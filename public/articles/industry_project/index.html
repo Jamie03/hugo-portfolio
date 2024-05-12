@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Affective State Change via Procedurally Generated Haptics &middot; JM Santiago III</title>
+  <meta name="title" content="Affective State Change via Procedurally Generated Haptics &middot; JM Santiago III" />
+  
+  <meta name="description" content="Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus." />
+  <meta name="keywords" content="Concentration, Haptics Design, Generative AI, Audio Generation, MIDI, " />
+  
+  
+  <link rel="canonical" href="//localhost:1313/articles/industry_project/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.16ef8a6896d8151791996e6789da59a48d35efa92f465864bfebdef24f1b8a6b7b542a9f4a9ca1d2b987d1ac6c72f3ed184dab5eb1db16fa43b0da3255b9f86c.css"
+    integrity="sha512-Fu&#43;KaJbYFReRmW5nidpZpI0176kvRlhkv&#43;ve8k8bimt7VCqfSpyh0rmH0axscvPtGE2rXrHbFvpDsNoyVbn4bA==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.b36dda9ec4ec11e967fd341e7d57b8c484ac7a39f8f329f7bcf7ce4812569de8607db866a086d4789956ac0b74967e251c9a566d94d469dd28b8787fed4f46f5.js"
+    integrity="sha512-s23ansTsEeln/TQefVe4xISsejn48yn3vPfOSBJWnehgfbhmoIbUeJlWrAt0ln4lHJpWbZTUad0ouHh/7U9G9Q==" data-copy="" data-copied=""></script>
+  
+  
+  <script src="/js/zoom.min.js"></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="//localhost:1313/articles/industry_project/">
+  <meta property="og:site_name" content="JM Santiago III">
+  <meta property="og:title" content="Affective State Change via Procedurally Generated Haptics">
+  <meta property="og:description" content="Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2024-01-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-23T00:00:00+00:00">
+    <meta property="article:tag" content="Concentration">
+    <meta property="article:tag" content="Haptics Design">
+    <meta property="article:tag" content="Generative AI">
+    <meta property="article:tag" content="Audio Generation">
+    <meta property="article:tag" content="MIDI">
+    <meta property="og:image" content="//localhost:1313/articles/industry_project/featured.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="//localhost:1313/articles/industry_project/featured.png"><meta name="twitter:title" content="Affective State Change via Procedurally Generated Haptics">
+<meta name="twitter:description" content="Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus.">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Articles",
+    "name": "Affective State Change via Procedurally Generated Haptics",
+    "headline": "Affective State Change via Procedurally Generated Haptics",
+    
+    "abstract": "Explore our latest blog post where we dive into the development of a pioneering industry project combining AI and haptic technology to enhance emotional well-being. We share insights from our journey of creating a web-based prototype that uses personalized audio-haptic experiences to promote relaxation and focus.",
+    "inLanguage": "en",
+    "url" : "\/\/localhost:1313\/articles\/industry_project\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Jose Maria Santiago III"
+    },
+    "copyrightYear": "2024",
+    "dateCreated": "2024-01-23T00:00:00\u002b00:00",
+    "datePublished": "2024-01-23T00:00:00\u002b00:00",
+    
+    "dateModified": "2024-01-23T00:00:00\u002b00:00",
+    
+    "keywords": ["Concentration","Haptics Design","Generative AI","Audio Generation","MIDI"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "4427"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Jose Maria Santiago III" />
+  
+  
+  
+  <link href="mailto:jmsantiagoiii@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/jamie03" rel="me" />
+  
+  
+  <link href="https://www.linkedin.com/in/jmsantiagoiii/" rel="me" />
+  
+  
+  <link href="https://orcid.org/my-orcid?orcid=0000-0002-4730-7865" rel="me" />
+  
+  
+  <link href="https://www.researchgate.net/profile/Jose-Santiago-10" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">JM Santiago III</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Home
+    </p>
+</a>
+
+
+            
+            
+  <a href="/articles/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Articles
+    </p>
+</a>
+
+
+            
+            
+  <a href="/worlds/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Worlds
+    </p>
+</a>
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Home
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/articles/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Articles
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/worlds/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Worlds
+        </p>
+    </a>
+</li>
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+  
+  
+  
+  
+  
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/articles/industry_project/featured_hu365818d3e7fefcdce37720343dcf6c03_161391_1200x0_resize_box_3.png);"></div>
+        
+    
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Affective State Change via Procedurally Generated Haptics
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">21 mins</span><span class="px-2 text-primary-500">&middot;</span>
+
+
+<script type="text/javascript" src="/js/zen-mode.min.ccc8b2a0c4505216444ca25530c7328aa0bef94f43dabaf3e598e1b4271de9eec76c1cb35917471a4f7ccb8d84051b3acef42baa30724ac3a667fcf1fec4432a.js" integrity="sha512-zMiyoMRQUhZETKJVMMcyiqC&#43;&#43;U9D2rrz5ZjhtCcd6e7HbByzWRdHGk98y42EBRs6zvQrqjBySsOmZ/zx/sRDKg=="></script>
+
+<span class="mb-[2px]">
+    <span id="zen-mode-button"
+          class="text-lg hover:text-primary-500"
+          title="Enable zen mode"
+          data-title-i18n-disable="Enable zen mode"
+          data-title-i18n-enable="Disable zen mode">
+        <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
+    <path fill="currentColor" d="M 12.980469 4 C 9.1204688 4 5.9804688 7.14 5.9804688 11 L 6 26 L 9.9804688 26 L 9.9804688 11 C 9.9804688 9.35 11.320469 8 12.980469 8 L 40.019531 8 C 41.679531 8 43.019531 9.35 43.019531 11 L 43.019531 39 C 43.019531 40.65 41.679531 42 40.019531 42 L 29 42 C 29 43.54 28.420938 44.94 27.460938 46 L 40.019531 46 C 43.879531 46 47.019531 42.86 47.019531 39 L 47.019531 11 C 47.019531 7.14 43.879531 4 40.019531 4 L 12.980469 4 z M 7 28 C 4.794 28 3 29.794 3 32 L 3 42 C 3 44.206 4.794 46 7 46 L 23 46 C 25.206 46 27 44.206 27 42 L 27 32 C 27 29.794 25.206 28 23 28 L 7 28 z M 7 32 L 23 32 L 23.001953 42 L 7 42 L 7 32 z"/>
+</svg>
+  </span>
+
+</span>
+    </span>
+</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/concentration/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Concentration
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/haptics-design/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Haptics Design
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/generative-ai/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Generative AI
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/audio-generation/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    Audio Generation
+  </span>
+</span>
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/midi/&#34;,'_self');">
+    <span class="flex" style="cursor: pointer;">
+  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+    MIDI
+  </span>
+</span>
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-goals-and-initial-concept">Project Goals and Initial Concept</a>
+      <ul>
+        <li><a href="#description-of-the-deliverable">Description of the Deliverable</a></li>
+        <li><a href="#initial-concept-and-evolution">Initial Concept and Evolution</a></li>
+        <li><a href="#final-deliverable-web-application">Final Deliverable: Web Application</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#application-context-and-usage">Application Context and Usage</a>
+      <ul>
+        <li><a href="#detailed-overview-of-intermediary-results">Detailed Overview of Intermediary Results</a></li>
+        <li><a href="#understanding-flow-state">Understanding Flow State</a></li>
+        <li><a href="#exploration-of-haptic-development">Exploration of Haptic Development</a></li>
+        <li><a href="#exploration-of-audio-generation">Exploration of Audio Generation</a></li>
+        <li><a href="#preliminary-user-testing">Preliminary User Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#shift-in-target-audience-and-platform">Shift in Target Audience and Platform</a></li>
+    <li><a href="#our-guiding-star-">Our Guiding Star 🌟</a>
+      <ul>
+        <li><a href="#revised-framework">Revised Framework</a></li>
+        <li><a href="#outcomes-of-the-shift">Outcomes of the Shift</a></li>
+        <li><a href="#building-the-mvp">Building the MVP</a></li>
+      </ul>
+    </li>
+    <li><a href="#analysis-of-project-outcome">Analysis of Project Outcome</a>
+      <ul>
+        <li><a href="#comparison-of-initial-goal-vs-final-outcome">Comparison of Initial Goal vs. Final Outcome</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#project-goals-and-initial-concept">Project Goals and Initial Concept</a>
+      <ul>
+        <li><a href="#description-of-the-deliverable">Description of the Deliverable</a></li>
+        <li><a href="#initial-concept-and-evolution">Initial Concept and Evolution</a></li>
+        <li><a href="#final-deliverable-web-application">Final Deliverable: Web Application</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#application-context-and-usage">Application Context and Usage</a>
+      <ul>
+        <li><a href="#detailed-overview-of-intermediary-results">Detailed Overview of Intermediary Results</a></li>
+        <li><a href="#understanding-flow-state">Understanding Flow State</a></li>
+        <li><a href="#exploration-of-haptic-development">Exploration of Haptic Development</a></li>
+        <li><a href="#exploration-of-audio-generation">Exploration of Audio Generation</a></li>
+        <li><a href="#preliminary-user-testing">Preliminary User Testing</a></li>
+      </ul>
+    </li>
+    <li><a href="#shift-in-target-audience-and-platform">Shift in Target Audience and Platform</a></li>
+    <li><a href="#our-guiding-star-">Our Guiding Star 🌟</a>
+      <ul>
+        <li><a href="#revised-framework">Revised Framework</a></li>
+        <li><a href="#outcomes-of-the-shift">Outcomes of the Shift</a></li>
+        <li><a href="#building-the-mvp">Building the MVP</a></li>
+      </ul>
+    </li>
+    <li><a href="#analysis-of-project-outcome">Analysis of Project Outcome</a>
+      <ul>
+        <li><a href="#comparison-of-initial-goal-vs-final-outcome">Comparison of Initial Goal vs. Final Outcome</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>Have you ever looked down at your fitness tracker or smartwatch only to be reminded that you&rsquo;re not quite hitting your daily targets for exercise or meditation? That was me, almost every other day. It got me thinking about the more subtle ways technology nudges us—sometimes guilt-tripping us—about our lifestyle choices. This personal experience, mixed with a pinch of curiosity and a dash of frustration, was the starting point for a project that would delve into the realms of artificial intelligence and haptics.</p>
+<p>Alongside my team, I embarked on what felt like a DIY adventure in the beginning—playing around with concepts and technology that were quite new to us. We wanted to see if we could create something that goes beyond the occasional buzz on the wrist; something that genuinely helps people find their calm and focus amidst the chaos of their day-to-day lives.</p>
+<p>This blog post is an exploration of that journey. It&rsquo;s about our attempts, failures, and successes in marrying AI with the tactile feedback of haptics to create a tool designed to improve emotional well-being. I invite you to join me on this behind-the-scenes look at our project, where we aimed to make the digital touch a bit more human.</p>
+
+
+<h2 class="relative group">Project Goals and Initial Concept 
+    <div id="project-goals-and-initial-concept" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#project-goals-and-initial-concept" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>For our Industry Project, we explored various directions, including artificial intelligence (AI), to procedurally generate long-form audio, additionally focusing on their musical patterns. This audio is intended for playback through a haptic actuator, aimed at inducing a state of relaxation leading to a state of flow. Following initial research and conceptualization, we developed a suitable prototype for producing this long-form audio. With this project, we are contributing to the field of emotional well-being applications aimed at users who want to improve their emotional state during concentrated productivity activities or for later relaxation.</p>
+<p>In our fast-paced modern world, many people struggle with stress, lack of concentration, and emotional imbalance. This project addresses the need for a solution that can conveniently and effectively help users achieve their desired emotional states, such as relaxation and flow during or before the start of a productive work session. The motivation behind this project is to utilize generative AI and haptics to create an accessible emotional enhancement tool that meets the various needs of users in their daily lives and provides valuable insights into the field of emotional state change technology development.</p>
+<p>Our main goal was to investigate the emotional states of flow and relaxation, design a concept for inducing these states, and construct a basic proof-of-concept prototype to evaluate our tool&rsquo;s effectiveness. Additionally, we aimed to explore potential embodiments for this technology. This prototype aims to leverage AI-generated long-form audio, played through a haptic speaker, to induce various affective states. The goal of this application is to improve users&rsquo; emotional well-being, especially during study or work sessions, by offering personalized and guided audio-based haptic experiences that promote states such as relaxation and flow.</p>
+
+
+<h3 class="relative group">Description of the Deliverable 
+    <div id="description-of-the-deliverable" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#description-of-the-deliverable" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+<h3 class="relative group">Initial Concept and Evolution 
+    <div id="initial-concept-and-evolution" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#initial-concept-and-evolution" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Our project began with the goal of developing a mobile application aimed at general users in the work environment, focusing on improving emotional well-being through procedurally generated audio signals that are translated into haptic feedback via audio-haptic actuators. At the beginning of our project, our industry partner Daniel Shor from Innovobot gave us the choice of exploring relaxation, flow, or sleep. As relaxation is already a very well-known area, our team decided to explore the flow state instead, a concept from Mihály Csíkszentmihályi.</p>
+<img class="thumbnailshadow" src="img/challenge_skill.png" alt="Mental state in terms of challenge level and skill level, according to Csikszentmihalyi's flow model.">
+<p>*<a href="https://en.wikipedia.org/wiki/File:Challenge_vs_skill.svg"   target="_blank">
+    https://en.wikipedia.org/wiki/File:Challenge_vs_skill.svg</a></p>
+<p>The conducted research during this phase was guided by our industry partner. After understanding the context and problem statement, we conducted our first preliminary pilot user tests with three different haptic actuators which also came from our industry partner. The goal of the user testing was to test out a created flow soundwave based on our research and to explore potential embodiments for a haptic device that would interface with the application. The knowledge gained from these tests, combined with research into AI models for audio generation, led to a significant shift from developing an application that triggers a flow state to one that triggers relaxation for a better flow state. For this purpose, we carried out a second research phase, as outlined in our project plan above.</p>
+
+
+<h3 class="relative group">Final Deliverable: Web Application 
+    <div id="final-deliverable-web-application" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#final-deliverable-web-application" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Aside from focusing on a relaxation tool we also changed the target group of our tool, we decided on developing a more specialized, testing tool, catering not just to general users but specifically to haptic designers and audio professionals. This was influenced by our research findings and early development insights. We built a web application-based MVP that allows haptic designers to create procedurally generated audio-based haptics, composed and controlled by MIDI data, to make the import and export of compositions more viable. This platform offers insight into possible future implementations of generative AI to create haptic experiences.</p>
+<p>For this purpose, we had to update our original research plan, to incorporate:</p>
+<ol>
+<li><strong>Desk Research</strong>: Conducting thorough research, investigating the emotional states of relaxation to flow from the psychological perspective, to gain further insights on how these emotional states could be established more reliably.  Additionally continuing research on current AI capabilities in audio and haptic generation, and studying the impact of these technologies on emotional states.</li>
+<li><strong>Prototype Development</strong>:
+<ul>
+<li><strong>Tech Stack</strong>: Developing a React-based web application that incorporates MIDI creation and playback with Tone.js as an open-source version and in the end of the project with an alternative approach of cycling74’s RNBO.json Max 8 instrument patches, that give options to create more versatile instruments, used to play the MIDI, resulting in these audio-based haptic experiences when played on the audio-haptic actuators.</li>
+<li><strong>Sound Composition</strong>: Creating the prototype with two key components, as suggested by the industry partner: a baseline and sparkles.
+<ul>
+<li><em>Baseline</em>: Developing a modulated sine wave with amplitude modulation to mimic a calming breathing pattern, trying to lower the breath rate with a change of BPM and frequency pitch of the sine wave audio composition.</li>
+<li><em>Sparkles</em>: Integrating AI-generated notes using GPT-4 with few shotting to enhance the baseline and create a richer auditory experience by adding suitable harmonies, based on scientific frequency calculations and musical scale analysis.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<img class="thumbnailshadow" src="img/simple explanation.png" alt="A simple diagram of how each aspect of the haptic audio will feel: Baseline, Ladders, and Sparkles">
+<ol>
+<li><strong>Deployment</strong>: Launching the web app for web server application usage, allowing users to experience and provide feedback on the audio-haptic compositions.</li>
+</ol>
+
+
+<h3 class="relative group">Key Features 
+    <div id="key-features" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#key-features" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ol>
+<li><strong>Procedural Generation Capabilities</strong>: Users can set specific characteristics and parameters to generate audio compositions. This is powered by a blend of AI algorithms and manual controls, providing both precision and creativity in design.</li>
+<li><strong>Customizable Parameters</strong>: Haptic designers have the flexibility to manipulate a range of parameters, including frequency, amplitude, and modulation settings, allowing for the creation of diverse and nuanced haptic feedback for instant testing.</li>
+<li><strong>Real-Time Previews</strong>: The application provides real-time rendering, enabling designers to hear and feel the haptic output as they adjust settings, ensuring the end product aligns with their creative vision.</li>
+<li><strong>Integration of Tone.js and RNBO.js</strong>: By utilizing advanced web audio technologies, the application provides robust and high-quality audio output, which is crucial for the precise development of haptic feedback. The RNBO instrument would be optimized for haptic actuators.</li>
+<li><strong>AI-Enhanced Creativity</strong>: By using GPT-4 LLM to generate MIDI compositions via a few shots to create the note structure, the application offers new and dynamic possibilities in haptic design.</li>
+</ol>
+
+
+<h2 class="relative group">Application Context and Usage 
+    <div id="application-context-and-usage" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#application-context-and-usage" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Our web application MVP offers a prototyping platform for professionals to swiftly generate relaxing haptic sine waves, as well as to explore, innovate, and enhance AI prompts for &lsquo;sparkles&rsquo; feedback. It has potential applications across various industries, including gaming, therapy, and office environments, wherever there is a need for inducing relaxation.</p>
+
+
+<h3 class="relative group">Detailed Overview of Intermediary Results 
+    <div id="detailed-overview-of-intermediary-results" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#detailed-overview-of-intermediary-results" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The project commenced with an extensive phase of desk research, which revolved around the latest advancements in AI, audio, and haptic technology. Our initial idea revolved around establishing a guide for the concept of induced flow state, a highly focused and immersive mental state, through the use of specifically designed audio and haptic feedback. This concept was grounded in the hypothesis that certain auditory and tactile stimuli could effectively influence the user’s emotional and cognitive state, thereby facilitating easier entry into the flow state.</p>
+<p>We initially aimed to address both relaxation and flow states. However, it became evident that encompassing both affective states within the project&rsquo;s scope and time constraints was overly ambitious. Therefore, we made a strategic decision to narrow our focus solely on relaxation. This refinement allowed for a more in-depth and targeted approach, ensuring the quality and feasibility of the project within the allocated timeframe.</p>
+
+
+<h3 class="relative group">Understanding Flow State 
+    <div id="understanding-flow-state" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#understanding-flow-state" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The first step was to delve deeply into the characteristics necessary to induce a flow state. This involved:</p>
+<ol>
+<li><strong>Research on Flow Inducers</strong>: The team conducted independent research, guided by the industry partner and haptic expert Daniel Shor, to understand the specific elements like Beats Per Minute (BPM), Breaths Per Minute (BrPM), haptic frequency sweet spots, audio-haptic actuator specifics, and other sonic characteristics that could potentially induce flow or at least potentially influence our cognitive processing. A big part of the flow state establishment is also the intrinsic motivation mindset of the user, which can have various variables influencing once’s capabilities to engage into a flow state.</li>
+<li><strong>Few-shotting an LLM</strong>: The next step involved experimenting with a generative pre-trained transformer (GPT-4) model to generate usable music compositions in midi JSON form. This approach involved fine-tuning GPT&rsquo;s understanding of music theory. During these experiments, we encountered some limitations in the length of the response. Therefore, we also investigated ocal Large Language Models (LLM) as a promising alternative. However, this model proved to be impractical in the context of our project. It gave good and long responses but needed too much computing power to run as a simple application on the web or as an app.</li>
+</ol>
+
+
+<h3 class="relative group">Exploration of Haptic Development 
+    <div id="exploration-of-haptic-development" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#exploration-of-haptic-development" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Parallel to the audio component, we also looked into developing haptic feedback mechanisms, which included:</p>
+<ol>
+<li><strong>SuperCollider Program Template</strong>: A program could be designed in SuperCollider, an environment and programming language for real-time audio synthesis, where variables could be manipulated to create specific waveforms that would be translated into tactile feedback. However, we decided against using SuperCollider due to its complexity.</li>
+<li><strong>Integration with Interhaptics Haptic Composer</strong>: We also explored methods to integrate these waveforms into Interhaptics Haptic Composer, an industry-known tool that would allow the translation of audio signals into haptic feedback. After a short test phase, we decided against this tool as the existing app was only available on Android devices and was unfortunately very buggy.</li>
+<li><strong>Implementation on Haptic Devices</strong>: The final step in this segment was figuring out how to run these haptics on a physical haptic device, turning the digital signals into actual tactile experiences.</li>
+</ol>
+<p>Those approaches did not result in a fruitful manner, so we decided to first approach the audio-haptic actuators closer, to determine their characteristics and suitability four our cause.</p>
+
+
+<h3 class="relative group">Exploration of Audio Generation 
+    <div id="exploration-of-audio-generation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#exploration-of-audio-generation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>At the beginning, we investigated various generative AI models and services. This exploration aimed to identify models that could seamlessly integrate with our existing Python script.</p>
+<ol>
+<li><strong>Audiocraft + Gradio</strong>
+<ul>
+<li>Utilized Meta’s open-source music and audio-generative AI models.</li>
+<li>Incorporated Gradio to run a web app, simplifying user interaction.</li>
+<li>Found limitations in the variety of available models (primarily demo models), constraining the breadth of audio generation.</li>
+</ul>
+</li>
+<li><strong>Magenta’s MelodyRNN</strong>
+<ul>
+<li>Explored open-source melody-generative AI models using RNN-LSTM.</li>
+<li>The model generates melodies in a step-by-step process, akin to a Large Language Model (LLM).</li>
+<li>Availability limited to a Python library with no interactive playground or demo for user testing.</li>
+</ul>
+</li>
+<li><strong>Stability AI’s Dance Diffusion</strong>
+<ul>
+<li>Examined a collection of audio-generating machine learning models from HarmonAI under Stability AI.</li>
+<li>Considered exploring more of HarmonAI’s work.</li>
+<li>Access to the model was restricted to demos on Google Colab, presenting challenges for direct integration.</li>
+</ul>
+</li>
+<li><strong>Non-AI Audio Creation</strong>
+<ul>
+<li>As an alternative, a template was planned in MAXSP, a visual programming language for music and multimedia, to manually create audio waveforms.</li>
+</ul>
+</li>
+</ol>
+
+
+<h3 class="relative group">Preliminary User Testing 
+    <div id="preliminary-user-testing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#preliminary-user-testing" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>As mentioned previously, we also conducted preliminary user testing to determine the effectiveness of our conducted desk research. For that, we tested two soundwaves one from our industry partner for relaxation and one flow state-inducing wavelength along with various haptic actuators and their potential embodiments. To make sure our first study on flow states was going the right way, this testing phase was very important. It helped us see what users liked and whether different designs of our devices worked well at work. We made two types of haptic devices (for the neck and back) and tested them in three situations.</p>
+<ol>
+<li><strong>Prototypes</strong>
+<ul>
+<li><strong>Neck Pillow</strong>: Integrated with two wired haptic motors.</li>
+<li><strong>Back Pillow</strong>: Featured one wireless haptic motor.</li>
+</ul>
+</li>
+<li><strong>Testing Scenarios</strong>
+<ul>
+<li><strong>First Prototype without Music</strong>: Users experienced a 10-minute audio session (low intensity) and then took a 1-hour break. They maintained a diary for before and after the test.</li>
+<li><strong>First Prototype with Music</strong>: Similar to the first scenario, but with the inclusion of music.</li>
+<li><strong>Second Prototype without Music:</strong> A 10-minute audio session (high intensity) was followed by a 1-hour break, with diary entries before and after the test.</li>
+<li><strong>Second Prototype with Music</strong>: Similar to the first scenario, but with the inclusion of music.</li>
+</ul>
+</li>
+<li><strong>Final Interview</strong>
+<ul>
+<li>After completing the testing scenarios, users participated in a final interview. This provided valuable insights into their experiences, preferences, and the overall impact of the haptic devices in conjunction with the audio application.</li>
+</ul>
+</li>
+</ol>
+
+
+<h2 class="relative group">Shift in Target Audience and Platform 
+    <div id="shift-in-target-audience-and-platform" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#shift-in-target-audience-and-platform" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>During the early stages of development, our team envisioned creating a mobile application aimed at general users. This concept was driven by the desire to make affective state changes accessible to a broad audience. However, as the project evolved, we encountered several challenges and opportunities that prompted a shift in our approach.</p>
+<ol>
+<li><strong>Identifying a Niche Need</strong>: Our research and early feedback highlighted a specific need within the haptic design community – a tool that allows for the creation of procedurally generated audio-based haptics. This realization steered our focus towards a more niche but impactful area.</li>
+<li><strong>Recognizing the Individuality of Flow States:</strong> Flow state establishment is a more complicated and not so easily inducible state. There are various factors like goal establishment, and mood similarities that help transition into flow easier (e.g. relaxation → flow = easier than stress → flow) and distraction is a big factor in taking someone out of their flow state. These findings led us to the realization, that a mixed approach with an initial, guided relaxation phase to set goals for the work session and creating an emotional baseline could potentially ease the user’s engagement and transition into a productive flow state.</li>
+<li><strong>Redefining the Deliverable</strong>: In light of our new direction, we transitioned from developing a user-centered mobile application to creating a web application tailored for haptic designers. This shift was not only aligned with the identified niche need but also offered greater flexibility and potential for professional use.</li>
+<li><strong>Proof of Concept Goal</strong>: The change in our target audience and platform was also influenced by the project&rsquo;s revised goal to serve as a proof of concept. Given the time constraints and the complex nature of integrating AI with audio and haptic feedback, a web application for haptic designers presented a more viable and focused approach. It allowed us to demonstrate the core functionalities and potential of our concept, setting the foundation for future enhancements and expansions.</li>
+</ol>
+<p>We then came up with an iterated idea for our project, adapting to new insights and practical considerations. While the original focus was on creating a tool to induce flow state through audio-based haptic feedback, the revised concept shifted towards a more feasible and research-informed relaxation to “create a base for flow” approach. Here’s an overview of the key elements of the iterated idea:</p>
+
+
+<h2 class="relative group">Our Guiding Star 🌟 
+    <div id="our-guiding-star-" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#our-guiding-star-" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>The guiding principle of the revised project was the assumption that accessing flow states is more achievable from a relaxed state. This approach was based on the understanding that relaxation could serve as a preparatory phase, helping users to set goals and structure their thoughts, thereby reducing anxiety. This structured and calm mindset was seen as a potential foundation for more effectively inducing flow states.</p>
+
+
+<h3 class="relative group">Revised Framework 
+    <div id="revised-framework" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#revised-framework" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The revised approach was structured around two main components: Baseline and Sparkles.</p>
+<p><strong>Baseline Audio</strong></p>
+<ul>
+<li><strong>Utilizing the Existing Python script</strong>: We planned to use the Python script provided by our industry partner for creating the baseline audio. However, this was later revised into Javascript using Tone.js as a base library for producing the sounds. For the future, we imagined an alternative version and substituted the Tone.js instrument with a more versatile RNBO web-audio export patch.</li>
+<li><strong>User Control Over Inputs</strong>: We planned that a future version of the application would enable users to dynamically shift inputs according to an emotional grid, influencing the baseline audio to match the desired state and their complexity preferences to target the ideal engagement factor and have it as non-intrusive as possible.</li>
+<li><strong>Integration of the Max 8’s RNBO Object:</strong> By creating a javascript RNBO instrument patch, we would be able to play the generated MIDI on different instrument types to allow for rapid prototyping of waveforms and testing on different actuators with adjustable instrumentalization.</li>
+<li><strong>Two Different Approaches:</strong> For the creation of baseline audio, two approaches were possible. The basic concept is to lower the notes played while simultaneously manipulating the tempo to have the last third of the generated audio on the target frequency for the Breaths Per Minute (BrPM), scientifically backed with relaxation.
+<ul>
+<li>Linear MIDI + Instrument Pitch: The first utilizes linear MIDI creation that plays an instrument which will be pitch shifted to have the gradual detune effect for the relaxation. For example, one can choose a starting frequency where an associated note will be chosen as the baseline note and determining the musical scale of the composition. This composition can then be played linearly given the pitch of the instrument, playing the same tone and a melody suitable to that base tone) will be manipulated to gradually lower the compositions overall frequency. The tempo will be separately slowed and has no effect on the pitch logic of this approach.</li>
+<li>Ladder MIDI: The second utilizes the MIDI ladder concept, where fixed notes are played. The notes are associated with a certain frequency pitch, e.g. concert pitch of A4=440Hz, and the change in the frequency parameter towards lower and slower notes will be nudged to the closest note associated with the current value. This concludes in a MIDI composition, that when reaching a pivotal frequency threshold, the next generated note will be a lower one.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Dynamic Sparkles</strong></p>
+<ul>
+<li><strong>AI-Generated Audio</strong>: The plan included using GPT-4 to dynamically generate audio that would layer over the baseline audio, aiding in inducing relaxation. These “sparkles” can be differentiated into Chords, Ladders and Twinkles:</li>
+</ul>
+<img class="thumbnailshadow" src="img/types of sparkles.png" alt="A visualization of the different types of sparkle design we used: chords, ladders, and twinkles.">
+<p>Chords are Triads, Ladders are chords that are split and played up and down and Twinkles are short notes with no predefined sequence.</p>
+<ul>
+<li><strong>Incorporating Natural Sound Characteristics</strong>: We considered integrating sounds found in nature (such as bird sounds or flowing water) to enrich the audio experience. This could later be implemented in future work on the prototype, considering technological advancements in AI Audio generation like the audio sound effect generation model “Audiobox” by Meta.</li>
+</ul>
+
+
+<h3 class="relative group">Outcomes of the Shift 
+    <div id="outcomes-of-the-shift" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#outcomes-of-the-shift" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li><strong>Enhanced Focus on Quality</strong>: By narrowing our scope to establish the first step into relaxation and targeting haptic designers, we were able to concentrate our resources on developing an MVP.</li>
+<li><strong>Increased Technical Depth</strong>: By switching to a web application, we allow for a more modular approach thanks in part to the framework we’re utilizing. By using the React Javascript library as a base, we allow for the creation of components that can be rearranged based on the needs of the professional. This also allows for the use of an extensive list of Javascript libraries such as OpenAI, Tone.js, RNBO.js, Bootstrap, etc.</li>
+<li><strong>Foundation for Future Expansion</strong>: The proof of concept established with this web application lays a solid groundwork for future development. It provides a platform that can be improved and potentially expanded to include additional affective states and different context use cases apart from relaxation enhancement and stress reduction in work settings.</li>
+</ul>
+
+
+<h3 class="relative group">Building the MVP 
+    <div id="building-the-mvp" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#building-the-mvp" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>As previously mentioned, our MVP was a React-based prototype. We anticipated that this would facilitate the transition to a mobile app or enable it to function as a web application if required later. Additionally, this approach allowed us to utilize sound libraries like Tone.js and paved the way for future integration of a digital instrument (specifically designed for haptics) created using software called RNBO. The design of the Baseline and Sparkles as separate code components makes it possible to easily swap these elements, further enhancing the application&rsquo;s versatility.</p>
+<img class="thumbnailshadow" src="img/interface explanation.png" alt="Our primary UI broken down to which components manipulate which haptics.">
+<p>The baseline was created only through code on parameters like frequency given by the user.
+The up and down modulated sine wave effect was created through attack and release filters on single midi notes:</p>
+<img class="thumbnailshadow" src="img/baseline.png" alt="A visualization of the expected feeling for the baseline haptics.">
+<p>For the “sparkles”, we created prompts to teach GPT-4 how to compose musical notes in the way we wanted them. The answer was a list of notes in a Tone.js readable MIDI JSON format that were converted into playable MIDI again.</p>
+
+
+<h2 class="relative group">Analysis of Project Outcome 
+    <div id="analysis-of-project-outcome" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#analysis-of-project-outcome" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<img class="thumbnailshadow" src="img/ui.png" alt="A snapshot of our user interface, separated into three components for each of the haptics.">
+<p>The final deliverable of our project is the web application designed for haptic designers.</p>
+<ol>
+<li><strong>AI-Driven Procedural Audio Generation</strong>: One of the application’s core explorations was to generate unique audio compositions with LLM AI capabilities. By few-shotting the GPT model with a JSON structure, which was parsable by our code, we were able to create playable MIDI files with a LLM. This potentially offers a fresh perspective for establishing an AI promptable playground for haptic designers. Our experiment aimed at the creation of harmonic soundscapes that possibly could add to the relaxation-inducing baseline and therefore enhance the personal relaxation experience.</li>
+</ol>
+<img class="thumbnailshadow" src="featured.png" alt="A visualization of the different types of sparkle design we used: chords, ladders, and twinkles.">
+<ol start="2">
+<li><strong>Customizable Haptic Feedback Parameters</strong>: Designers have extensive control over haptic feedback parameters like frequency, tempo, and duration, essential for crafting diverse and nuanced haptic experiences suited to relaxation scenarios.</li>
+<li><strong>Responsive User Interface</strong>: The interface is intuitively designed, allowing easy navigation, parameter adjustments, and previews of haptic designs. The application is also responsive across different devices, ensuring flexibility and accessibility for designers using various platforms.</li>
+<li>Basic <strong>Sound Editing Tools</strong>: The application includes tools for basic audio editing, such as amplitude modulation and frequency adjustments, and allows overlaying multiple soundtracks for rich sound design that could translate into interesting haptics.</li>
+<li><strong>Integration with Tone.js and RNBO.js</strong>: Utilizing these advanced libraries, the app provides robust and high-fidelity audio capabilities, crucial for professional audio-based haptic design.</li>
+<li><strong>Custom MIDI Files</strong>:
+<ul>
+<li><strong>Upload Capability</strong>: One of the application&rsquo;s key features is the ability for users to upload their custom MIDI files for both the sparkles and baseline components. This functionality greatly enhances the customization potential, enabling designers to bring their unique creative visions into their haptic designs.</li>
+<li><strong>Download Option</strong>: Additionally, the application provides the capability to download the final MIDI file. This feature is particularly valuable as it allows for external customization and further manipulation of the audio composition. Designers can use this downloaded file in other software or platforms, offering even more flexibility and creative control in their design process.</li>
+</ul>
+</li>
+<li><strong>FX Features</strong>:</li>
+</ol>
+<p>Adding these additional audio effects can significantly alter the final haptic experience.</p>
+<ul>
+<li><strong>High-Pass and Low-Pass Filters</strong>: These filters enable designers to fine-tune their audio by controlling the frequency range that is let pass the filters. This is crucial for crafting the desired auditory texture and higher the quality of the auditory signal from the perspective of audio engineering, freeing up headroom for potentially more detailed and desirable haptic sensations.</li>
+<li><strong>Reverb Effects</strong>: Adds depth and space to the audio, allowing designers to simulate different environmental acoustics for a more immersive haptic experience.</li>
+<li><strong>Delay Effects:</strong> Adds little pulses that mirror the first “big impact” of played haptic audio. This can contribute to more complex haptic sensations while requiring less compositional effort.</li>
+</ul>
+<ol>
+<li><strong>Responsive Design for Various Devices</strong>: The react application is responsive across different devices, ensuring flexibility and accessibility for designers using various platforms. The core thought was to be able to connect a Bluetooth device and just play the audio generated by the website through the connected Bluetooth speaker, functioning as an audio-haptic actuator.</li>
+</ol>
+<p>The project outcome, though divergent from the initial concept, stands as a testament to our team&rsquo;s ability to navigate complex technological challenges and deliver a product that significantly advances the field of experimental haptic design and AI-audio integration.</p>
+
+
+<h3 class="relative group">Comparison of Initial Goal vs. Final Outcome 
+    <div id="comparison-of-initial-goal-vs-final-outcome" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#comparison-of-initial-goal-vs-final-outcome" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p><strong>Initial Goal</strong></p>
+<p>The original aim of the project was to develop a mobile app that could induce a state of flow through the integration of live AI-generated long-form audio translated into haptic feedback when played on a suitable audio-haptic actuator. This concept was grounded in the belief that certain auditory and tactile stimuli, when orchestrated effectively, could significantly influence a user&rsquo;s cognitive and emotional state, facilitating the achievement of a highly focused and immersive flow state. Key elements of this initial goal included:</p>
+<ol>
+<li><strong>Research on Flow State Inducers</strong>: In-depth exploration of the audio characteristics necessary to induce flow, such as BPM, frequency, and others.</li>
+<li><strong>AI Model Training</strong>: Utilizing and fine-tuning GPT models to generate suitable audio content.</li>
+<li><strong>Haptic Feedback Development</strong>: Creating a SuperCollider program template for waveform generation and exploring the integration of these waveforms into haptic devices.</li>
+<li><strong>Optional Audio Development</strong>: Considering both AI-driven and non-AI methods for additional audio generation, with tools like Audiocraft and MAXSP.</li>
+<li><strong>Focus on flow State Characteristics</strong>: Emphasizing various audio elements like frequency, amplitude, and rhythm to induce flow state.</li>
+</ol>
+<p><strong>Final Outcome</strong></p>
+<p>The project&rsquo;s final outcome, however, shifted significantly from this initial goal. The revised project, while still rooted in the use of audio-haptic feedback, leans now towards a more practical and achievable objective. The key changes in the final outcome included:</p>
+<ol>
+<li><strong>Relaxation instead of Flow:</strong> The project shifted focus towards the idea of using relaxation as a precursor to achieving a flow state. This concept was based on the assumption that a relaxed state could set the stage for a more effective transition into flow.</li>
+<li><strong>Infrastructure Development</strong>: Rather than completing the entire tool within the project&rsquo;s timeframe, the team focused on building the foundational system that could facilitate the future realization of the concept.</li>
+<li><strong>Baseline and Dynamic Audio Components</strong>: The project emphasized developing a system that balanced a hardcoded, yet individually adjustable, stable baseline haptic audio and conducting the first experiments for enriching the experience with subtle variations of dynamic, AI-generated melodies and harmonies.</li>
+<li><strong>Practical Adjustments</strong>: Given the scope and resource limitations, the project strategically adapted its goals, concentrating on creating an insightful MVP that is a scalable and adaptable system rather than a fully realized product.</li>
+</ol>
+
+        </div>
+        
+        
+
+        
+        
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://twitter.com/intent/tweet/?url=//localhost:1313/articles/industry_project/&amp;text=Affective%20State%20Change%20via%20Procedurally%20Generated%20Haptics"
+      title="Tweet on Twitter"
+      aria-label="Tweet on Twitter"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://reddit.com/submit/?url=//localhost:1313/articles/industry_project/&amp;resubmit=true&amp;title=Affective%20State%20Change%20via%20Procedurally%20Generated%20Haptics"
+      title="Submit to Reddit"
+      aria-label="Submit to Reddit"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M201.5 305.5c-13.8 0-24.9-11.1-24.9-24.6 0-13.8 11.1-24.9 24.9-24.9 13.6 0 24.6 11.1 24.6 24.9 0 13.6-11.1 24.6-24.6 24.6zM504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-132.3-41.2c-9.4 0-17.7 3.9-23.8 10-22.4-15.5-52.6-25.5-86.1-26.6l17.4-78.3 55.4 12.5c0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.3 24.9-24.9s-11.1-24.9-24.9-24.9c-9.7 0-18 5.8-22.1 13.8l-61.2-13.6c-3-.8-6.1 1.4-6.9 4.4l-19.1 86.4c-33.2 1.4-63.1 11.3-85.5 26.8-6.1-6.4-14.7-10.2-24.1-10.2-34.9 0-46.3 46.9-14.4 62.8-1.1 5-1.7 10.2-1.7 15.5 0 52.6 59.2 95.2 132 95.2 73.1 0 132.3-42.6 132.3-95.2 0-5.3-.6-10.8-1.9-15.8 31.3-16 19.8-62.5-14.9-62.5zM302.8 331c-18.2 18.2-76.1 17.9-93.6 0-2.2-2.2-6.1-2.2-8.3 0-2.5 2.5-2.5 6.4 0 8.6 22.8 22.8 87.3 22.8 110.2 0 2.5-2.2 2.5-6.1 0-8.6-2.2-2.2-6.1-2.2-8.3 0zm7.7-75c-13.6 0-24.6 11.1-24.6 24.9 0 13.6 11.1 24.6 24.6 24.6 13.8 0 24.9-11.1 24.9-24.6 0-13.8-11-24.9-24.9-24.9z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="mailto:?body=//localhost:1313/articles/industry_project/&amp;subject=Affective%20State%20Change%20via%20Procedurally%20Generated%20Haptics"
+      title="Send via email"
+      aria-label="Send via email"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_articles\/industry_project\/index.md"
+        var oid_likes = "likes_articles\/industry_project\/index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/articles/methodology_paper/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >The AI of Oz: A Framework for Integrating Generative AI in User-Centered Design</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-01-23 00:00:00 &#43;0000 UTC">23 January 2024</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/articles/encountering_ai/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Encountering AI: On the use of Generative AI in Dungeons & Dragons</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-03-27 00:00:00 &#43;0000 UTC">27 March 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      © 2024 JM Santiago. All Rights Reserved.
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer><div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="//localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>

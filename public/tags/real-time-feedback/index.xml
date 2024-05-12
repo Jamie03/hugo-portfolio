@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Real-Time Feedback on JM Santiago III</title>
+    <link>//localhost:1313/tags/real-time-feedback/</link>
+    <description>Recent content in Real-Time Feedback on JM Santiago III</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&amp;copy; 2024 JM Santiago. All Rights Reserved.</copyright>
+    <lastBuildDate>Tue, 23 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/real-time-feedback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Affective State Change via Procedurally Generated Haptics</title>
+      <link>//localhost:1313/articles/methodology_paper/</link>
+      <pubDate>Tue, 23 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/articles/methodology_paper/</guid>
+      <description>Our conceptual framework integrates Generative AI into the live-prototyping process of User-Centered Design, transforming traditional methodologies by enabling real-time user feedback and AI-driven simulations to enhance design responsiveness and innovation.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/articles/methodology_paper/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

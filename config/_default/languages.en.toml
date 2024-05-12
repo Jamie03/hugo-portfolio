@@ -1,0 +1,27 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "JM Santiago III"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/logo.png"
+  # secondaryLogo = "img/secondary-logo.png"
+  # description = "My awesome website"
+  copyright = "&copy; 2024 JM Santiago. All Rights Reserved."
+
+[author]
+  name = "Jose Maria Santiago III"
+  image = "me.jpeg"
+  headline = "Crafting Experiences & Unveiling Tomorrow's Tech for the masses 🚀"
+  bio = "As a designer & developer, Im always looking for an opportunity to put my skills to the test. I want to create new tools and bring cutting-edge technology to everyone. I value innovation and growth, with a pinch of whimsy and imagination!"
+  links = [
+    { email = "mailto:jmsantiagoiii@gmail.com" },
+    { github = "https://github.com/jamie03" },
+    { linkedin = "https://www.linkedin.com/in/jmsantiagoiii/" },
+    { orcid = "https://orcid.org/my-orcid?orcid=0000-0002-4730-7865" },
+    { researchgate = "https://www.researchgate.net/profile/Jose-Santiago-10" },
+  ]
